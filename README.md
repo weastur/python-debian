@@ -1,5 +1,7 @@
 # Latest Python for Debian GNU/Linux
 
+Build script to get deb-packaged latest Python which co-exists with system Python without interference. 
+
 # Howto
 
 Install docker and make. Then run
