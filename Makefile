@@ -11,7 +11,7 @@ python3.10-bullseye: clean-python3.10-bullseye
 		--build-arg DEBIAN_RELEASE=bullseye \
 		--build-arg UBUNTU_RELEASE=focal \
 		--build-arg PYTHON_VERSION=3.10 \
-		--build-arg REPO_TAG=debian/3.10.4-1+focal2 \
+		--build-arg REPO_TAG=debian/3.10.5-1+focal1 \
 		--output build/bullseye/python3.10 \
 		--force-rm \
 		--no-cache \
@@ -25,7 +25,7 @@ python3.10-buster: clean-python3.10-buster
 		--build-arg DEBIAN_RELEASE=buster \
 		--build-arg UBUNTU_RELEASE=focal \
 		--build-arg PYTHON_VERSION=3.10 \
-		--build-arg REPO_TAG=debian/3.10.4-1+focal2 \
+		--build-arg REPO_TAG=debian/3.10.5-1+focal1 \
 		--output build/buster/python3.10 \
 		--force-rm \
 		--no-cache \
@@ -39,7 +39,7 @@ python3.10-stretch: clean-python3.10-stretch
 		--build-arg DEBIAN_RELEASE=stretch \
 		--build-arg UBUNTU_RELEASE=bionic \
 		--build-arg PYTHON_VERSION=3.10 \
-		--build-arg REPO_TAG=debian/3.10.4-1+bionic2 \
+		--build-arg REPO_TAG=debian/3.10.5-1+bionic1 \
 		--output build/stretch/python3.10 \
 		--force-rm \
 		--no-cache \
