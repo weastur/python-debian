@@ -1,6 +1,9 @@
-.PHONY: all build clean python3.10-bullseye python3.10-buster python3.10-stretch clean-python3.10-bullseye clean-python3.10-buster clean-python3.10-stretch
+.PHONY: all build pack clean python3.10-bullseye python3.10-buster python3.10-stretch clean-python3.10-bullseye clean-python3.10-buster clean-python3.10-stretch
 
-all: build
+all: pack
+
+pack: build
+	@find build/ -maxdepth 1 -mindepth 1 ! -path . -type d -exec sh -c 'tar -cvjSf "$(basename {}).tar.bz2" "$(basename {})"' \;
 
 build: python3.10-bullseye python3.10-buster python3.10-stretch
 
