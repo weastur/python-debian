@@ -1,0 +1,9 @@
+---
+kind: pipeline
+name: default
+
+steps:
+- name: test
+  image: debian
+  commands:
+  - echo Hello
