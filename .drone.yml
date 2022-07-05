@@ -18,6 +18,7 @@ steps:
       - hadolint Dockerfile
       - yamllint .
       - markdownlint *.md
+      - checkmake Makefile
 
   - name: build
     image: docker:20.10.17-dind
