@@ -6,6 +6,7 @@ yaml-files:
   - '.yamllint'
   - '.pre-commit-config.yaml'
   - '.github/*.yml'
+  - '.markdownlint.yaml'
 rules:
   line-length:
     max: 120
