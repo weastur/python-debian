@@ -74,3 +74,8 @@ trigger:
     - tag
     - pull_request
     - push
+---
+kind: signature
+hmac: 075f45b913c72bb34072cd148b35d91f2ba171e9ca4d8fb4d2f9589338ac7621
+
+...
