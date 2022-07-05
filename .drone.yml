@@ -1,0 +1,66 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: wait for docker
+    image: docker:20.10.17-dind
+    volumes:
+      - name: dockersock
+        path: /var/run
+    commands:
+      - while ! docker ps 2>&1 > /dev/null; do sleep 1; done
+
+  - name: lint
+    image: weastur/metalinter
+    commands:
+      - hadolint Dockerfile
+      - yamllint .
+      - markdownlint *.md
+      - checkmake Makefile
+
+  - name: build
+    image: docker:20.10.17-dind
+    volumes:
+      - name: dockersock
+        path: /var/run
+    when:
+      event:
+        - pull_request
+        - tag
+    commands:
+      - apk add --no-cache make
+      - make
+
+  - name: publish
+    image: plugins/github-release
+    when:
+      event:
+        - tag
+    settings:
+      api_key:
+        from_secret: github_token
+      files: build/*.tar.bz2
+      file_exists: overwrite
+      checksum: sha256
+      draft: true
+      overwrite: true
+
+services:
+  - name: docker
+    image: docker:20.10.17-dind
+    privileged: true
+    volumes:
+      - name: dockersock
+        path: /var/run
+
+volumes:
+  - name: dockersock
+    temp: {}
+
+trigger:
+  event:
+    - tag
+    - pull_request
+    - push
