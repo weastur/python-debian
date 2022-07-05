@@ -18,7 +18,6 @@ To issue build for a particular version
 ```shell
 make python3.10-bullseye
 make python3.10-buster
-make python3.10-stretch
 ```
 
 Look at the `build/` directory
@@ -46,7 +45,7 @@ pre-commit install
 
 ### Which versions of Debian are supported?
 
-All currently maintaied versions: 9 (stretch), 10 (buster), 11 (bullseye)
+All currently maintaied versions: 10 (buster), 11 (bullseye)
 
 ### Which versions of Python are supported?
 
@@ -66,10 +65,8 @@ Making the fastest build isn't a goal of this project.
 
   Debian 11 (bullseye): *43m29s*</br>
   Debian 10 (buster): *40m58s*</br>
-  Debian 9 (stretch): *49m36s*</br>
 
   **AMD Ryzen 5 3600 6-Core / 64G:**
 
   Debian 11 (bullseye): *32m48s*</br>
   Debian 10 (buster): *31m11s*</br>
-  Debian 9 (stretch): *25m23s*</br>
