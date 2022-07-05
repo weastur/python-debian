@@ -1,6 +1,9 @@
 # Latest Python for Debian GNU/Linux
 
-Build script to get deb-packaged latest Python which co-exists with system Python without interference.
+[![Build Status](https://drone.weastur.com/api/badges/weastur/python-debian/status.svg)](https://drone.weastur.com/weastur/python-debian)
+![GitHub](https://img.shields.io/github/license/weastur/python-debian)
+
+Build scripts to get deb-packaged latest Python which co-exists with system Python without interference.
 
 ## Howto
 
@@ -25,6 +28,19 @@ Look at the `build/` directory
 The build process runs inside docker, *without* using cache. It was tested on Linux and macOS.
 The source code for building packages will be downloaded from the [deadsnakes](https://github.com/deadsnakes) project.
 After the build, the simple smoke test takes place, installing all packages and running Python script.
+
+## Contributing
+
+You need an amd64 Linux host with Docker installed.
+You can start from `.drone.yml` to inspect the build process.
+The main files are `Dockerfile` and `Makefile`.
+
+Also, you can use [pre-commit](https://pre-commit.com) to run some checks
+locally before commit.
+
+```bash
+pre-commit install
+```
 
 ## FAQ
 
