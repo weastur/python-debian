@@ -12,8 +12,7 @@ ARG DEBCONF_NOWARNINGS=yes
 WORKDIR /root
 RUN apt-get update -qq \
 	&& apt-get install -qq -y --no-install-recommends > /dev/null \
-	libmpdec-dev \
-	libncursesw5-dev \
+	    libncursesw5-dev \
         blt-dev \
         build-essential \
         debhelper \
