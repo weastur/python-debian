@@ -2,6 +2,9 @@ name: Build and Release
 
 on:
   push:
+    paths:
+      - 'Makefile'
+      - 'Dockerfile'
   create:
     tags:
       - '*'
