@@ -1,11 +1,11 @@
 # Latest Python for Debian GNU/Linux
 
-[![Build Status](https://drone.weastur.com/api/badges/weastur/python-debian/status.svg)](https://drone.weastur.com/weastur/python-debian)
-![GitHub](https://img.shields.io/github/license/weastur/python-debian)
+![Build](https://github.com/weastur/python-debian/workflows/Build%20and%20Release/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Build scripts to get deb-packaged latest Python which co-exists with system Python without interference.
 
-## Howto
+## HowTo
 
 Install docker and make. Then run
 
