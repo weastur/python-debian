@@ -1,6 +1,7 @@
 # Latest Python for Debian GNU/Linux
 
 ![Build](https://github.com/weastur/python-debian/workflows/Build%20and%20Release/badge.svg)
+![gitlint](https://github.com/weastur/python-debian/workflows/gitlint/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Build scripts to get deb-packaged latest Python which co-exists with system Python without interference.
