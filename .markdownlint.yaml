@@ -1,5 +1,5 @@
 ---
 default: true
-
+no-inline-html: false
 MD013:
   line_length: 120
