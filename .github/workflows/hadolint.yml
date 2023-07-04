@@ -1,7 +1,9 @@
 ---
 name: Lint Dockerfile
 
-on: push
+on:
+  push:
+  workflow_dispatch:
 
 jobs:
   linter:

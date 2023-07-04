@@ -8,6 +8,7 @@ on:
   create:
     tags:
       - '*'
+  workflow_dispatch:
 
 jobs:
   build:
