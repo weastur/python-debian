@@ -14,7 +14,7 @@ python3.11-bookworm: clean-python3.11-bookworm
 		--build-arg DEBIAN_RELEASE=bookworm \
 		--build-arg UBUNTU_RELEASE=jammy \
 		--build-arg PYTHON_VERSION=3.11 \
-		--build-arg REPO_TAG=debian/3.11.4-1+jammy1 \
+		--build-arg REPO_TAG=debian/3.11.5-1+jammy1 \
 		--output build/bookworm/python3.11 \
 		--force-rm \
 		--no-cache \
@@ -28,7 +28,7 @@ python3.11-bullseye: clean-python3.11-bullseye
 		--build-arg DEBIAN_RELEASE=bullseye \
 		--build-arg UBUNTU_RELEASE=focal \
 		--build-arg PYTHON_VERSION=3.11 \
-		--build-arg REPO_TAG=debian/3.11.4-1+focal1 \
+		--build-arg REPO_TAG=debian/3.11.5-1+focal1 \
 		--output build/bullseye/python3.11 \
 		--force-rm \
 		--no-cache \
@@ -42,7 +42,7 @@ python3.11-buster: clean-python3.11-buster
 		--build-arg DEBIAN_RELEASE=buster \
 		--build-arg UBUNTU_RELEASE=focal \
 		--build-arg PYTHON_VERSION=3.11 \
-		--build-arg REPO_TAG=debian/3.11.4-1+focal1 \
+		--build-arg REPO_TAG=debian/3.11.5-1+focal1 \
 		--output build/buster/python3.11 \
 		--force-rm \
 		--no-cache \
