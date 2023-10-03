@@ -18,9 +18,9 @@ make
 To issue build for a particular version
 
 ```shell
-make python3.11-bookworm
-make python3.11-bullseye
-make python3.11-buster
+make python3.12-bookworm
+make python3.12-bullseye
+make python3.12-buster
 ```
 
 Look at the `build/` directory
@@ -51,7 +51,7 @@ All currently maintaied versions: 10 (buster), 11 (bullseye), 12 (bookworm)
 
 ### Which versions of Python are supported?
 
-Only latest version – Python 3.11
+Only latest version – Python 3.12
 
 ### Why do not build all supported Python?
 
