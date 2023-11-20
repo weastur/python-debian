@@ -59,17 +59,6 @@ There is not much sense in that. If you need all Python versions for development
 [pyenv](https://github.com/pyenv/pyenv) project or [docker images](https://hub.docker.com/_/python).
 In other cases, you can safely run old python code in the newest interpreter.
 
-## Support
-
-If you want to support the development or say thanks, become a GitHub Sponsor or
-
-<a href="https://www.buymeacoffee.com/weastur" target="_blank">
-<img src="https://cdn.buymeacoffee.com/buttons/default-orange.png"
-    alt="Buy Me A Coffee"
-    height="41"
-    width="174">
-</a>
-
 ## License
 
 MIT, see [LICENSE](./LICENSE).
