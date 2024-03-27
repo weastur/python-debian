@@ -2,6 +2,7 @@
 
 ![Build](https://github.com/weastur/python-debian/workflows/Build%20and%20Release/badge.svg)
 ![gitlint](https://github.com/weastur/python-debian/workflows/gitlint/badge.svg)
+![Lint Dockerfile](https://github.com/weastur/python-debian/workflows/Lint%20Dockerfile/badge.svg)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/weastur/python-debian/main.svg)](https://results.pre-commit.ci/latest/github/weastur/python-debian/main)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
