@@ -21,7 +21,6 @@ To issue build for a particular version
 ```shell
 make python3.12-bookworm
 make python3.12-bullseye
-make python3.12-buster
 ```
 
 Look at the `build/` directory
